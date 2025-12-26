@@ -70,6 +70,19 @@ web_modules/
 .env.*
 !.env.example
 
+# n8n local data folder (contains your SQLite file, binary data, etc.)
+.n8n/
+# If you used a different folder name for volumes, add it here:
+/data/
+
+# SQLite databases (if any are left over)
+*.sqlite
+database.sqlite*
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 .parcel-cache
